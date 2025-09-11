@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Compre agora e receba este produto incrível no conforto da sua casa. Qualidade garantida, entrega rápida e satisfação total. Aproveite" />
+    <meta name="description" content="Compre agora e receba o produto físico no conforto da sua casa. Aproveite a entrega rápida, garantia e a praticidade que você merece.
+" />
     <meta name="keywords" content="durasil" />
     <meta name="robots" content="noindex, nofollow" />
     <meta http-equiv="Content-Language" content="pt" />
@@ -83,7 +84,24 @@
         }
       }
     </style>
-    <script>
+    <!-- Event snippet for Durasil mon conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11306183595/AW-11306183595',
+      'value': 0.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script><script>
     function click() {
       document.getElementById("goToPage").click();
     }
